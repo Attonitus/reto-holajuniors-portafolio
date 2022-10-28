@@ -1,0 +1,261 @@
+:root{
+    --font: 'DM Sans', sans-serif;
+    --buttonFont: 500 1rem/1.375rem var(--font);
+    --titleFont: 700 2.5rem/3.75rem var(--font);
+    --titleBig: 500 3.25rem/2.75rem var(--font);
+    --headerFont: 700 1.5rem/2rem var(--font);
+    --text: 1.375rem/1.625rem var(--font);
+    --titleArticle: 500 1.125rem/1.75rem var(--font);
+    --textArticle: 1rem/1.625rem var(--font);
+    --buttonMiddle: 500 1.125rem/1.625rem var(--font);
+    --titleWork: 500 1.375rem/2rem var(--font);
+    --white: #fff;
+    --blue:  #1E0E62;
+    --gray: #f1f1f1;
+    --grayText: rgba(21, 20, 57, 0.4);
+    --green: #25DAC5;
+
+}
+
+body{
+    margin: 0;
+    background-color: var(--gray);
+}
+
+header{
+    background-color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 1.5rem;
+    padding-block: 1rem;
+    align-items: center;
+}
+header h2{
+    margin: 0;
+    font: var(--headerFont);
+    color: var(--blue);
+}
+button{
+    padding-inline: 1.5rem;
+    padding-block: .35rem;
+    border-radius: 2rem;
+    color: var(--blue);
+    background-color: var(--white);
+    font: var(--buttonFont);
+    border: 2px solid #EBEAED;
+}
+
+main {
+    padding-inline: 1.5rem;
+}
+.hero img{
+    margin-block: 1.5rem;
+    border-radius: 1rem;
+}
+
+.heroText{
+    max-inline-size: 45rem;
+}
+
+.hero h1{
+    font: var(--titleFont);
+    color: var(--blue);
+    margin-block: 3rem;
+}
+.hero p{
+    font: var(--text);
+    color: var(--grayText);
+    margin-block: 3rem;
+}
+
+.abilities h2{
+    font: var(--titleBig);
+    color: var(--blue);
+}
+
+.abilities p {
+    font: var(--titleWork);
+    color: var(--grayText);
+
+    max-inline-size: 50rem;
+}
+
+.abilities{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-block: 2rem;
+}
+
+.articles{
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+    justify-content: center;
+}
+
+.articles h3{
+    font: var(--titleArticle);
+    color: var(--blue);
+}
+
+.articles p {
+    font: var(--textArticle);
+    max-inline-size: 20rem;
+}
+
+.abiliBig{
+    text-align: center;
+}
+
+.experience-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-inline-size: 40rem;
+    margin: auto;
+    padding-block: 4rem;
+}
+
+.experience-text h2{
+    font: var(--titleBig);
+    color: var(--blue);
+}
+
+.experience-text p {
+    font: var(--titleWork);
+    color: var(--grayText);
+    text-align: center;
+}
+
+.alt{
+    background-color: var(--green);
+    color: var(--white);
+}
+
+.experience-works{
+    display: flex;
+    max-inline-size: 75rem;
+    flex-wrap: wrap;
+    margin: auto;
+    gap: 2rem;
+    justify-content: center;
+    padding-block: 2rem;
+}
+
+.work{
+    max-inline-size: 15.625rem;
+}
+
+.experience{
+    background-color: var(--white);
+    border-radius: 1rem;
+}
+
+.work a{
+    font: var(--titleWork);
+    color: var(--blue);
+}
+
+.work p{
+    font: var(--textArticle);
+    color: var(--grayText);
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    block-size: 20rem;
+    gap: 1.5rem;
+}
+
+.social{
+    display: flex;
+    gap: 2rem;
+}
+
+.footer-text{
+    text-align: center;
+    max-inline-size: 50rem;
+}
+.footer-text h3{
+    font: var(--titleFont);
+
+    font-size: 1rem;
+    margin-block: 1rem;
+    color: var(--blue);
+}
+
+.footer-text a {
+    font: var(--titleFont);
+    font-size: 1rem;
+    color: #482BE7;
+    text-decoration: none;
+}
+
+
+
+@media screen and (min-width: 400px){
+    .imgHero img{
+        inline-size: 21.875rem;
+    }
+    .footer-text h3{
+        font-size: 1.5rem;
+    }
+    .footer-text a{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 1000px){
+    .heroText{
+        display: flex;
+        flex-direction: column;
+        max-inline-size: 30rem;
+        padding-inline: 1rem;
+    }
+
+    .heroText h1{
+        margin-block-end: 0;
+    }
+    .hero{
+        gap: 2rem;
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        max-inline-size: 75rem;
+    }
+    .imgHero img {
+        inline-size: 25rem;
+    }
+    .experience-works img {
+        inline-size: 31.25rem;
+        border-radius: 1rem;
+    }
+    .work{
+        max-inline-size: 31.25rem;
+    }
+
+    .work img{
+        margin-block-end: 1rem;
+    }
+    .footer-text h3{
+        font: var(--titleFont);
+        margin-block: 1rem;
+        color: var(--blue);
+    }
+    
+    .footer-text a {
+        font: var(--titleFont);
+        color: #482BE7;
+        text-decoration: none;
+    }
+    
+
+
+}
